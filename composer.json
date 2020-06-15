@@ -1,0 +1,17 @@
+{
+    "name": "root/cms.loc",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Engine\\": "engine",
+            "Engine\\DI\\": "engine/DI",
+            "Cms\\": "cms",
+            "Admin\\": "admin",
+            "Plugin\\": "content/plugins"
+        },
+        "files": [
+            "engine/defines.php",
+            "engine/function.php"
+        ]
+    }
+}

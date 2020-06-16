@@ -12,7 +12,7 @@ $(function() {
         handle: 'i.icon-cursor-move',
         onDragStart: function ($item, container, _super) {
             // Duplicate items of the no drop area
-            if (container.options.drop)
+            if (!container.options.drop)
                 $item.clone().insertAfter($item);
             _super($item, container);
         },
@@ -39,6 +39,8 @@ $(function() {
 
                 }
             });
+
+            _super($item, container);
         }
     });
 });
